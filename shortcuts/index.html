@@ -28,7 +28,7 @@
 
     <!-- SEO tools -->
     <title>OneState Police Faction</title>
-    <meta name="description" content="Feedback page, you can rate this website.">
+    <meta name="description" content="Gadgets Shortcuts.">
     <meta name="keywords" content="onestate">
     <!--Add additional SEO meta data here!-->
 
@@ -37,7 +37,7 @@
     <meta property="og:url" content="https://pd.onestate.fun/"/>
     <meta property="og:image" content="/asset/favicon.png"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:description" content="We'd love it if you'd rate this site for us. Fill out a simple form with a few clicks. It only takes a minute."/>
+    <meta property="og:description" content="Useful page for shortcuts. You find here everything what you need."/>
 
   </head>
   <body class="bg-dark">
@@ -78,33 +78,79 @@
 
     <div class="container container-1">
         <div class="row">
-            <h1 class="title-line"><b>Website feedback:</b></h1>
+            <h1 class="title-line"><b></b></h1>
             <!-- These are dummy commands | They don't actually work on Spectre if you choose to install it -->
         </div>
         <!-- Update these with your bot's Commands -->
-        <li class="list-group-item">
+        
+        <div class="container container-1">
+            </div>
             <div class="row">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfu3GypUmLKfqtrvVfaIDQxY5ompsmE1RIKWbHjTwPnofh_kw/viewform?embedded=true" width="640" height="1389" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-                </div>
-                </li>
-        <ul class="list-group" id="CommandList">
-            <li class="list-group-item">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                        <div class="card bg-grey" style="width:100%">
-                            <div class="card-body">
-                                <!-- Command -->
-                                <p class="card-title big-text">Not working?</p>
-                                <h5>We direct you to the link.</h5>
-                                <!-- Command Description -->
-                                <p>Click - <a href="https://forms.gle/AKrpnbVywdSkVy1h7" target="_blank">Website Feedback Form</a></p>
-                            </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <div class="card bg-grey" style="width:100%">
+                        <div class="card-body">
+                          <h4 class="card-title big-text">Macros</h4>
+                          <p class="card-text">A list of required and additional macros. Easy to copy.</p>
+                          <!-- Change link to your support server link -->
+                          <a href="https://onestate.fun/police/macros" target="_blank" class="btn btn-discord btn-block stretched-link">View Macros</a>
                         </div>
                     </div>
                 </div>
-            </li>
-        </ul>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <div class="card bg-grey" style="width:100%">
+                        <div class="card-body">
+                          <h4 class="card-title big-text">Violations</h4>
+                          <p class="card-text">List of Violations with jail time. Easy to copy.</p>
+                          <!-- Change link to your support server link -->
+                          <a href="https://onestate.fun/police/violations" target="_blank" class="btn btn-discord btn-block stretched-link">View Violations List</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <div class="card bg-grey" style="width:100%">
+                        <div class="card-body">
+                          <h4 class="card-title big-text">Teaching Videos</h4>
+                          <p class="card-text">Lots of material to learn. Arresting videos, tutorials, useful gadgets..</p>
+                          <!-- Change link to your support server link -->
+                          <a href="https://onestate.fun/police/videos" target="_blank" class="btn btn-discord btn-block stretched-link">View Videos</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <div class="card bg-grey" style="width:100%">
+                        <div class="card-body">
+                          <h4 class="card-title big-text">Training Macros</h4>
+                          <p class="card-text">Macros for training. This is for trainers to do their job. Easy to copy.</p>
+                          <!-- Change link to your support server link -->
+                          <a href="https://onestate.fun/police/training" target="_blank" class="btn btn-discord btn-block stretched-link">View Training Macros</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <div class="card bg-grey" style="width:100%">
+                        <div class="card-body">
+                          <h4 class="card-title big-text">Training DM Message</h4>
+                          <p class="card-text">Discord DM message. This is for trainers to do their job. This message will be sended by trainers to their recruits to recruit's DM on Discord.</p>
+                          <!-- Change link to your support server link -->
+                          <a href="https://onestate.fun/police/dm" target="_blank" class="btn btn-discord btn-block stretched-link">View DM Message</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
     </div>
+
+    <script>
+        $(document).ready(function(){
+          $("#myInput").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#CommandList li").filter(function() {
+              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+          });
+        });
+    </script>
 
 <nav class="navbar navbar-expand-md bg-discord navbar-dark justify-content-center">
     <div class="container">
